@@ -11,12 +11,9 @@ import TimerToWedding from "@/components/windows/timerToWedding";
 import GetInTouch from "@/components/windows/getInTouch";
 import Footer from "@/components/windows/footer";
 import RequestToQuests from "@/components/windows/requestToQuests";
-import { useEffect, useState } from "react";
-import MobileOnlyOverlay from "@/components/windows/mobileOnlyOverlay";
 
 export default function Home() {
   const customerDetails = useCustomerDetails();
-  const [isMobile, setIsMobile] = useState<boolean>(true);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -41,35 +38,8 @@ export default function Home() {
     });
   }, []);
 
-  function isMobileDevice() {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    return window.innerWidth <= 600;
-  }
-
-  useEffect(() => {
-    const checkDevice = () => {
-      const mobile = isMobileDevice();
-      setIsMobile(mobile);
-
-      document.documentElement.style.overflowY = "auto";
-    };
-
-    checkDevice();
-
-    window.addEventListener("resize", checkDevice);
-
-    return () => {
-      window.removeEventListener("resize", checkDevice);
-      document.documentElement.style.overflowY = "auto";
-    };
-  }, []);
-
   return (
     <>
-      {/* {!isMobile && <MobileOnlyOverlay />} */}
       <section>
         <script
           type="application/ld+json"

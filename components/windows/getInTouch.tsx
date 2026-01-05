@@ -107,7 +107,7 @@ export default function GetInTouch() {
             >
                 <input type="hidden" name="access_key" value="b8103831-4f24-4458-8fe8-e003ad1f178a" />
                 <input type="hidden" name="subject" value="Feedback [Wedding Invitation]" />
-                <input type="hidden" name="replyto" value="h1rnykvlad@gmail.com" />
+                <input type="hidden" name="replyto" value="your-email@example.com" />
                 <input type="hidden" name="from_name" value="Wedding invitation" />
                 <input type="checkbox" name="botcheck" className="hidden" />
                 <input type="hidden" name="redirect" value="https://web3forms.com/success" />

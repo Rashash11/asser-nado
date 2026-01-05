@@ -49,11 +49,6 @@ npm run dev
 
 No `.env` configuration is required.
 
-## 🔗 Demo
+## 👤 Author
 
-🚧 *Public version coming soon...*
-
-
-## 👰🤵 Authors
-
-Created with ❤️ by **Vlad & Dasha**
+Created with ❤️ by **Mostafa Elrashash**
